@@ -1,15 +1,20 @@
 /* NACHO ACEDO ALVAREZ */
 
+/* TODO font size responsive */
+/* TODO media query's para poder visualizarlo correctamente en moviles */
+
 body, html{
     margin: 0;
+    /* width en px para poder probar si esta correctamente adaptada la web */
     max-width: 1280px;
+     /* esta es una forma de adaptar el tamaño de fuente con respecto al ancho del viewport , no es la más optima */
+    font-size: 0.8vw; 
 }
 
 body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-size: 1.1vw; /* 1.1 vw adapta la fuente con respecto a todo el contenido horizontal visible por el usuario*/
 }
 
 header{
@@ -20,7 +25,7 @@ header{
 nav{
     margin:0 auto;
     margin-top: 10px;
-    /* width: (1260 * 100) / 1280px */
+    /* width: (1260px * 100) / 1280px */
     width: 98.4375%;
     border-radius: 20px; /* BORDER RADIUS NOS PERMITE REDONDEAR LOS BORDES DE NUESTROS CONTENEDORES*/
     background-color:aliceblue;
@@ -166,7 +171,7 @@ input[type="checkbox"],
 select {
     /* width: (560px * 100%) / 560px */
     width: 100%; /* OCUPA TODO EL ANCHO DEL FORMULARIO */
-    /* padding: (10px * 100%) / 560 */
+    /* padding: (10px * 100%) / 560px */
     padding: 1.78571429%; /* ESPACIADO INTERNO ENTRE LOS CAMPOS */
     margin-bottom: 20px; /* ESPACIADO INFERIOR */
     border: 1px solid #ddd;
@@ -183,7 +188,7 @@ input[type="checkbox"] {
 }
 
 input[type="text"]{
-    /* width: (548 * 100%) / 560px */
+    /* width: (548px * 100%) / 560px */
     width:97.85714286%;
     height: 30px;
     border-radius: 5px;
@@ -277,7 +282,6 @@ footer > div:nth-child(2){
     /* padding: (20px * 100%) 1240px */
     padding: 1.61290323%;
 }
-/* width: 580px ( 620px - 40px padding)*/
 
 div:nth-child(1) h2{
     margin-top:20px;
