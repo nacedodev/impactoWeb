@@ -1,0 +1,136 @@
+<!-- NACHO ACEDO ALVAREZ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMPACTO WEB</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="index">
+        <header> 
+            <a href="https://tree-nation.com/es/plantar/yo-mismo" target="_blank"><img src="images/tree.png" alt="Descripción de la imagen"></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="info.html">SABER MAS</a></li>
+            </ul>
+        </nav>
+            <!-- DIV SUPERIOR IZQUIERDO (IMAGEN Y LISTAS) -->
+        <div>
+            <figure>
+                <img src="images/residuos.jpg" alt="residuos">
+                <figcaption>Residuos compras online sector textil</figcaption>
+            </figure>
+            <ul>
+                <li>Sectores online mas contaminantes:
+                    <ol>
+                        <li> Sector textil </li>
+                        <li> Sector electronica</li>
+                        <li> Alimentos perecederos</li>
+                        <li> Industria editorial</li>
+                        <li> Embalajes</li>
+                    </ol>
+                </li>
+                <li>Desventajas de comprar online:
+                    <ol>
+                        <li>Mayor emisión de CO2 por envío.</li>
+                        <li>Embalaje excesivo.</li>
+                        <li>Menos interacción social y comunitaria.</li>
+                    </ol>
+                </li>
+                <li>Organizaciones ambientales sostenibles
+                    <ol>
+                        <li>WWF</li>
+                        <li>GreenPeace</li>
+                        <li>Sierra Club</li>
+                        <li>NRDC</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <!-- DIV SUPERIOR DERECHO (ESLOGAN) -->
+        <div>
+            <h2>" TU <span> CLICK </span> EN LINEA , UN ECO EN LA TIERRA " </h2>
+            <h5>Haz que tus clicks cuenten</h5>
+        </div>
+        <!-- DIV INFERIOR IZQUIERDO (FORMULARIO) -->
+        <div>
+            <form action="respuesta.php" method="POST">
+                <!-- Campo de Texto -->
+                <label for="texto">Escribe un tema que te gustaria que se tratase en la web:</label>
+                <input type="text" id="texto" name="texto">
+            
+                <!-- Campo Select -->
+                <label for="select">Selecciona una tematica que te atraiga:</label>
+                <select name="select" id="select">
+                    <option value="Cambio climatico">Cambio climatico</option>
+                    <option value="influencia del ecommerce en transportes">influencia del ecommerce en transportes</option>
+                    <option value="Como alcanzar una venta online sostenible">Como alcanzar una venta online sostenible</option>
+                </select>
+            
+                <!-- Campos Radio -->
+                <label>Te ha parecido interesante?:</label>
+                <input type="radio" name="radio" id="radio1" value="Si">
+                <label for="radio1">Si</label>
+                <input type="radio" name="radio" id="radio2" value = "No">
+                <label for="radio2">Haría cambios en la web</label><br>
+            
+                <!-- Checkbox Único -->
+                <input type="checkbox" id="checkboxUnico" name="checkboxUnico" value="si">
+                <label for="checkboxUnico">Haz click para aceptar los terminos</label><br><br>
+            
+                <!-- Varios Checkboxes (Múltiple Selección) -->
+                <label>Porque te gusta esta web?:</label>
+                <!-- muy importante que el name de los checkbox sea un array , cada checkbox marcado generará una posicion en el array opciones -->
+                <input type="checkbox" name="opciones[]" id = "opcion1" value="diseño">
+                <label for="opcion1">Diseño</label>
+                <input type="checkbox" name="opciones[]" id="opcion2" value="Contenido">
+                <label for="opcion2">Contenidos</label>
+                <input type="checkbox" name="opciones[]" id="opcion3" value="Accesibilidad">
+                <label for="opcion3">Accesibilidad</label>
+                <!-- Botón de Enviar -->
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <!-- DIV INFERIOR DERECHO (TABLA) -->
+        <div>
+            <table>
+                <tr>
+                    <th>Previsiones</th>
+                    <th>2022</th>
+                    <th>2030</th>
+                </tr>
+                <tr>
+                    <td>Toneladas de CO2 (Millones)</td>
+                    <td>19</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>minutos de trafico elevado</td>
+                    <td>53</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td>Vehiculos de reparto (Millones)</td>
+                    <td>5.3</td>
+                    <td>7.2</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div>
+                <h2>Contacto</h2>
+                <h5>+34 632 172 234</h5>
+            </div>
+            <div>
+                <p>Horario de atención: Lunes a Viernes de 9:00 AM a 5:00 PM</p>
+                <p>Síguenos en redes sociales:</p>
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </div>
+        </footer>
+    </body>
+</html>

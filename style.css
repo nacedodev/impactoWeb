@@ -1,0 +1,334 @@
+/* NACHO ACEDO ALVAREZ */
+
+body, html{
+    margin: 0;
+    max-width: 1280px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.1vw; /* 1.1 vw adapta la fuente con respecto a todo el contenido horizontal visible por el usuario*/
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav{
+    margin:0 auto;
+    margin-top: 10px;
+    /* width: (1260 * 100) / 1280px */
+    width: 98.4375%;
+    border-radius: 20px; /* BORDER RADIUS NOS PERMITE REDONDEAR LOS BORDES DE NUESTROS CONTENEDORES*/
+    background-color:aliceblue;
+    border: 1px solid black;
+}
+
+footer {
+    clear: both; /*PROPIEDAD QUE "LIMPIA" LOS FLOTANTES ANTERIORES PARA QUE EL ELEMENTO SE PUEDA COLOCAR DEBAJO DE LOS FLOTANTES */
+    /* width: (1240px * 100%) / 1280px */
+    width: 96.875%;
+    margin: 0 auto;
+    height: 160px;
+    background-color: #f7f7f761;
+    color: #fff;
+    /* padding: (20px * 100%) / 1240px */
+    padding: 1.61290323% 0; 
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+div{
+    /* width: (600px * 100%) / 1280px */
+    width: 46.875%; 
+    height: 340px;
+    float: left;
+    /* padding: (20px * 100%) / 1280px */
+    padding: 1.5625%;
+}
+
+#index{ /*UTILIZO EL ID INDEX PARA REFERIRME A LA PAGINA WEB PRINCIPAL , PARA DAR ESTILOS A AMBAS WEBS EN UN SOLO CSS*/
+    background-color: rgb(1, 246, 106); 
+}
+
+#info{ /* UTILIZO EL ID INFO PARA REFERIRME A LA PAGINA WEB CON INFORMACION EXTRA */
+    background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0.7)), url(images/mountain.jpg); /* PONEMOS UNA IMAGEN DE FONDO Y POR ENCIMA UN DEGRADADO OSCURO PARA MEJORAR LA LEGIBILIDAD DE LA WEB*/
+}
+
+/* ESTILOS PARA LA BARRA DE NAVEGACION */
+nav > ul{
+    /* width: (1260px * 100%) / 1260px */
+    width: 100%;
+    margin:0;
+    padding: 0;
+    border-radius:20px;
+}
+
+nav li{
+    display:inline-block; /*PARA QUE EL CODIGO NOS PERMITA TENER DOS ELEMENTOS QUE ANTES DE BLOQUE E*/
+    list-style-type:none;/*QUITAMOS LOS INDICADORES QUE VIENEN A LA IZQUIERDA DE TODOS LOS ELEMENTOS DE LA LISTA*/
+    /* width: (100px * 100%) / 1260px) */
+    width:7.93650794%;
+    text-align: center;
+    margin: 10px auto;
+    margin-right: 20px;
+    /* padding: (15px * 100%) /  1260px*/
+    padding:1.19047619%;
+    border-radius: 10px;
+    background-color: rgba(234, 234, 234, 0.386);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.6s; /* ESTO PERMITE QUE CUANDO EL LI CAMBIE DE ESTADO (UN HOVER POR EJEMPLO) SE LLEVE A CABO UNA TRANSICION DE SOMBREADO QUE DURA 0.6s*/
+}
+
+nav li:first-child{
+    margin-left: 12px;
+}
+
+li a{
+    width: 100%;
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+}
+
+nav li:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* AGRANDAMOS LA SOMBRA AL HACER HOVER */
+}
+
+/* ESTILOS PARA EL DIV SUPERIOR IZQUIERDO , IMAGEN Y LISTA */
+div img {
+    /* width: (260px * 100%) 260px */
+    max-width: 100%;
+    border-radius: 15px;
+    height: 340.36px;
+}
+
+figure{
+    color:rgb(90, 90, 90);
+    margin:0;
+    text-align: center;
+    display:inline-block;
+    width: 43.33333333%;
+}
+
+div ul{
+        float: right; /* HACE QUE LA LISTA SE UBIQUE A LA DERECHA*/
+        /* width: (300px * 100) / 600px */
+        width: 50%; /* OCUPA LA OTRA MITAD DEL ANCHO DEL DIV */
+        height: 100%; /* OCUPA TODA LA ALTURA DEL DIV */
+        margin: 0; /* ELIMINA MARGENES PARA ADAPTARSE COMPLETAMENTE AL DIV*/
+        list-style-type: none; /* ELIMINA LOS ESTILOS DE LISTA POR DEFECTO */
+        background-color: #f7f7f752;
+        border-radius: 15px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);/*UNA CAJA QUE APLICA SOMBREADO EN LA DIRECCION INDICADA , CON EL RANGO RGB*/
+        /* padding: (10px * 100%) / 640px */
+        padding: 1.66666667%;
+}
+
+div ul > li{
+    color: #008cff97;
+    text-shadow: 0px 1px 2px rgba(112, 112, 112, 0.5); /*TEXT SHADOW ES MUY SIMILAR BOX SHADOW , PERO UNO ES PARA TEXTOS DIRECTAMENTE*/
+    margin-top:15px;
+}
+
+ol > li{
+    color:rgb(255, 255, 255);
+}
+
+a > img {
+    max-height: 40px; /* ESTABLECE LA ALTURA MAXIMA DEL LOGO */
+    max-width: 50px; /* ESTABLECE EL ANCHO MAXIMO DEL LOGO */
+    margin-top: 10px;
+}
+
+header > h3{
+    margin:0
+}
+
+form{
+    /* width: (560px * 100%) / 600px */
+    width: 93.33333333%;
+    /* padding (20px * 100%) / 600px */
+    padding:3.33333333%;
+    border-radius: 15px;
+    background-color: #f7f7f743;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 302px;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+select {
+    /* width: (560px * 100%) / 560px */
+    width: 100%; /* OCUPA TODO EL ANCHO DEL FORMULARIO */
+    /* padding: (10px * 100%) / 560 */
+    padding: 1.78571429%; /* ESPACIADO INTERNO ENTRE LOS CAMPOS */
+    margin-bottom: 20px; /* ESPACIADO INFERIOR */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* CAMBIA LA DISPOSICION DE LOS ELEMENTOS RADIO Y CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+    /* width: (13px * 100%) / 560px */
+    width: 2.32142857%;
+    margin-right: 10px; /* ESPACIADO DERECHO ENTRE ELEMENTOS */
+    display: inline-block; /* PERMITE QUE LOS ELEMENTOS ESTEN EN LA MISMA LINEA , PERO MANTIENE LAS PROPIEDADES DE UN ELEMENTO DE BLOQUE */
+}
+
+input[type="text"]{
+    /* width: (548 * 100%) / 560px */
+    width:97.85714286%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin:0;
+    /* padding: (10px * 100%) / 560px */
+    padding-left: 1.78571429%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]{
+    display: block;
+    margin:0 auto;
+    /* width: (480px / 100%) / 560px */
+    width:85.71428571%;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #f7f7f799;
+    cursor:pointer;
+}
+
+table {
+    /* width: (600px * 100%) / 600px */
+    width: 100%;
+    height: 342px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f743;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+/* width se adapta al contenido */
+
+/* Estilo para las filas impares */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para las filas al pasar el cursor */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+    background-color: #4dafff97;
+    color: white;
+}
+
+tr > th:nth-child(2),
+tr > th:nth-child(3),
+tr > td:nth-child(2),
+tr > td:nth-child(3){
+    text-align: right;
+}
+
+div > h2{
+    color:white;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*TEXT SHADOW ES MUY SIMILAR BOX SHADOW , PERO ES PARA TEXTOS DIRECTAMENTE*/
+}
+/* width: 600px (no padding, no border)*/
+
+div > h5 {
+    color: rgb(114, 114, 114);
+    text-align: center;
+}
+
+span{
+    color:rgba(201, 0, 0, 0.821);
+}
+
+/* Estilos para la información de contacto */
+footer  div:nth-child(1),
+footer > div:nth-child(2){
+    font-size: 18px;
+    max-height: 160px;
+    /* width: (580px * 100%) / 1240px */
+    width: 46.77419355%;
+    /* padding: (20px * 100%) 1240px */
+    padding: 1.61290323%;
+}
+/* width: 580px ( 620px - 40px padding)*/
+
+div:nth-child(1) h2{
+    margin-top:20px;
+}
+
+/* Estilos para la información adicional */
+footer > div:nth-child(2) {
+    font-size: 14px;
+}
+
+footer > div:nth-child(2) > a{
+    text-decoration: none;
+}
+
+footer > div:nth-child(2) > a:visited{
+    color:green;
+}
+
+#info footer{
+    background-color: #52525261;
+    color: green;
+}
+
+#info div ul {
+    color:white;
+    width: 160px;
+    height: 300px;
+    float:left;
+    margin-left:60px;
+    list-style: none;
+    border-radius: 15px;
+    background-color: #3c3c3c61;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#info figure{
+    text-align: center;
+    color:white;
+}
+
+#info figure > img {
+    max-width: 500px;
+}
+
+
+#info div ul > li{
+    color: #00ff0097;
+    text-shadow: 0px 1px 2px rgba(112, 112, 112, 0.5);
+    margin-top:15px;
+}
+
+#info ol > li{
+    color:rgb(255, 255, 255);
+}
