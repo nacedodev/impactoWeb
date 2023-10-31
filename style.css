@@ -1,4 +1,11 @@
 /* NACHO ACEDO ALVAREZ */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+@font-face {
+    font-family: Bebas Neue;
+    font-size: x-large;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
 
 /* TODO font size responsive */
 /* TODO media query's para poder visualizarlo correctamente en moviles */
@@ -8,7 +15,7 @@ body, html{
     /* width en px para poder probar si esta correctamente adaptada la web */
     max-width: 1280px;
      /* esta es una forma de adaptar el tamaño de fuente con respecto al ancho del viewport , no es la más optima */
-    font-size: 0.8vw; 
+    font-size: 1vw; 
 }
 
 body{
@@ -151,10 +158,6 @@ a > img {
     margin-top: 10px;
 }
 
-header > h3{
-    margin:0
-}
-
 form{
     /* width: (560px * 100%) / 600px */
     width: 93.33333333%;
@@ -217,7 +220,7 @@ table {
     width: 100%;
     height: 342px;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     background-color: #f7f7f743;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -258,7 +261,7 @@ div > h2{
     font-size: 2.5vw;
     text-align: center;
     margin-top: 90px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*TEXT SHADOW ES MUY SIMILAR BOX SHADOW , PERO ES PARA TEXTOS DIRECTAMENTE*/
 }
 /* width: 600px (no padding, no border)*/
