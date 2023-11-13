@@ -12,8 +12,13 @@
 
 body, html{
     margin: 0;
+<<<<<<< HEAD
 	/* width en px para poder probar si esta correctamente adaptada la web */
      max-width: 1280px;
+=======
+    /* width en px para poder probar si esta correctamente adaptada la web */
+     max-width: 1280px; 
+>>>>>>> e1a7767 (letras)
      /* esta es una forma de adaptar el tamaño de fuente con respecto al ancho del viewport , no es la más optima */
      font-size: 15px;
 }
@@ -341,7 +346,7 @@ footer > div:nth-child(2) > a:visited{
     color:rgb(255, 255, 255);
 }
 
-@media screen and (width <= 1100px){
+@media screen and (width >= 890px){
     body{
         font-size: 12px;
     }
